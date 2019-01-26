@@ -12,6 +12,8 @@
 		5F56DACE21FCDF210088138D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F56DACC21FCDF210088138D /* Main.storyboard */; };
 		5F56DAD021FCDF230088138D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F56DACF21FCDF230088138D /* Assets.xcassets */; };
 		5F56DAD321FCDF230088138D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F56DAD121FCDF230088138D /* LaunchScreen.storyboard */; };
+		5F56DADB21FCEE350088138D /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DADA21FCEE350088138D /* PhrasesViewController.swift */; };
+		5F56DADD21FCEE560088138D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DADC21FCEE560088138D /* EventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5F56DACF21FCDF230088138D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F56DAD221FCDF230088138D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F56DAD421FCDF230088138D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F56DADA21FCEE350088138D /* PhrasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesViewController.swift; sourceTree = "<group>"; };
+		5F56DADC21FCEE560088138D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				5F56DAC821FCDF210088138D /* AppDelegate.swift */,
 				5F56DACA21FCDF210088138D /* ViewController.swift */,
 				5F56DACC21FCDF210088138D /* Main.storyboard */,
+				5F56DADC21FCEE560088138D /* EventsViewController.swift */,
+				5F56DADA21FCEE350088138D /* PhrasesViewController.swift */,
 				5F56DACF21FCDF230088138D /* Assets.xcassets */,
 				5F56DAD121FCDF230088138D /* LaunchScreen.storyboard */,
 				5F56DAD421FCDF230088138D /* Info.plist */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F56DADB21FCEE350088138D /* PhrasesViewController.swift in Sources */,
+				5F56DADD21FCEE560088138D /* EventsViewController.swift in Sources */,
 				5F56DACB21FCDF210088138D /* ViewController.swift in Sources */,
 				5F56DAC921FCDF210088138D /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ERKF84PN28;
 				INFOPLIST_FILE = "Sign Language/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ERKF84PN28;
 				INFOPLIST_FILE = "Sign Language/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
