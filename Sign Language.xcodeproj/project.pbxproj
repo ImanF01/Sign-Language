@@ -14,6 +14,7 @@
 		5F56DAD321FCDF230088138D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F56DAD121FCDF230088138D /* LaunchScreen.storyboard */; };
 		5F56DADD21FCEE560088138D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DADC21FCEE560088138D /* EventsViewController.swift */; };
 		5F56DADF21FCFBE00088138D /* PhrasesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DADE21FCFBE00088138D /* PhrasesTableViewController.swift */; };
+		5F56DAE121FD077D0088138D /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DAE021FD077D0088138D /* EventsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5F56DAD421FCDF230088138D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F56DADC21FCEE560088138D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		5F56DADE21FCFBE00088138D /* PhrasesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesTableViewController.swift; sourceTree = "<group>"; };
+		5F56DAE021FD077D0088138D /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5F56DAC821FCDF210088138D /* AppDelegate.swift */,
 				5F56DACA21FCDF210088138D /* ViewController.swift */,
 				5F56DACC21FCDF210088138D /* Main.storyboard */,
+				5F56DAE021FD077D0088138D /* EventsTableViewController.swift */,
 				5F56DADE21FCFBE00088138D /* PhrasesTableViewController.swift */,
 				5F56DADC21FCEE560088138D /* EventsViewController.swift */,
 				5F56DACF21FCDF230088138D /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				5F56DADF21FCFBE00088138D /* PhrasesTableViewController.swift in Sources */,
 				5F56DADD21FCEE560088138D /* EventsViewController.swift in Sources */,
 				5F56DACB21FCDF210088138D /* ViewController.swift in Sources */,
+				5F56DAE121FD077D0088138D /* EventsTableViewController.swift in Sources */,
 				5F56DAC921FCDF210088138D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

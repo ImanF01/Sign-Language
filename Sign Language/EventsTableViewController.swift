@@ -1,5 +1,5 @@
 //
-//  PhrasesTableViewController.swift
+//  EventsTableViewController.swift
 //  Sign Language
 //
 //  Created by Iman F on 1/26/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhrasesTableViewController: UITableViewController {
+class EventsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class PhrasesTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 10
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "phrasesTableViewCell", for: indexPath)
         cell.textLabel?.text = "Cell Row: \(indexPath.row) Section: \(indexPath.section)"

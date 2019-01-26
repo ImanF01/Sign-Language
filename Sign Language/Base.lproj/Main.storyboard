@@ -38,7 +38,7 @@
                                     <color key="titleColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <segue destination="blE-sz-4Wf" kind="show" id="DmG-5r-Hpj"/>
+                                    <segue destination="ElS-GH-gCc" kind="show" id="DOh-3W-FhZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,12 +72,21 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phrasesTableViewCell" id="CIp-KV-nSJ">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phrasesTableViewCell" rowHeight="60" id="CIp-KV-nSJ">
+                                <rect key="frame" x="0.0" y="72" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CIp-KV-nSJ" id="hRk-hX-jSk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spm-F1-yvQ">
+                                            <rect key="frame" x="54" y="19" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -91,38 +100,58 @@
             </objects>
             <point key="canvasLocation" x="967" y="134"/>
         </scene>
-        <!--Events View Controller-->
-        <scene sceneID="zNj-Ot-uYQ">
+        <!--Events Table View Controller-->
+        <scene sceneID="Zed-ve-G3U">
             <objects>
-                <viewController title="Events View Controller" id="blE-sz-4Wf" userLabel="Events View Controller" customClass="EventsViewController" customModule="Sign_Language" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jsn-lu-nrX">
+                <tableViewController id="ElS-GH-gCc" customClass="EventsTableViewController" customModule="Sign_Language" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w4L-4p-FjD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-ee-Jcc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Death Events" id="hko-wh-FZa">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="kZF-2a-AYQ">
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="sQ1-s7-fuw"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Lxs-DU-XDF"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mRd-22-O62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="bsE-Bq-rUM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Title" id="Gaq-pP-VwL">
+                                    <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="ozd-D8-FbU">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="a9Z-kO-6sN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="F71-1J-8PX">
+                                <rect key="frame" x="0.0" y="72" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F71-1J-8PX" id="scb-Ke-agb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-Vq-pLZ">
+                                            <rect key="frame" x="31" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ElS-GH-gCc" id="3A4-bT-d07"/>
+                            <outlet property="delegate" destination="ElS-GH-gCc" id="yVk-G8-JlZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lU-Aq-jWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="872"/>
+            <point key="canvasLocation" x="137" y="851"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6zn-1H-Edp"/>
+        <segue reference="a9Z-kO-6sN"/>
     </inferredMetricsTieBreakers>
 </document>
