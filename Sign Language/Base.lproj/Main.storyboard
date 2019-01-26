@@ -26,7 +26,7 @@
                                     <color key="titleColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ymq-go-q13" kind="show" id="yeA-g7-7Td"/>
+                                    <segue destination="MQY-EQ-eeZ" kind="show" id="8iR-t7-ebG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InM-D6-ZdY">
@@ -50,42 +50,46 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--Phrases View Controller-->
-        <scene sceneID="cws-jl-etk">
+        <!--Phrases Table View Controller-->
+        <scene sceneID="v3Y-zb-hev">
             <objects>
-                <viewController id="ymq-go-q13" customClass="PhrasesViewController" customModule="Sign_Language" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TQe-Yk-dv8">
+                <tableViewController id="MQY-EQ-eeZ" customClass="PhrasesTableViewController" customModule="Sign_Language" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y7J-dI-0J4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-w7-OVB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="4kK-VZ-DYZ">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="z0U-2a-prh">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DNv-hH-gVa">
-                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="&lt; Back"/>
-                                            </button>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorBarButtonItem="z0U-2a-prh" id="3je-le-JyS">
-                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                </segue>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="M4B-IR-Lvo"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iHz-l2-8yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="sN5-2p-qTx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Title" id="LFK-mQ-QUS">
+                                    <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="c4H-fy-cZx">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="6zn-1H-Edp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phrasesTableViewCell" id="CIp-KV-nSJ">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CIp-KV-nSJ" id="hRk-hX-jSk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MQY-EQ-eeZ" id="sYR-2Y-Ts6"/>
+                            <outlet property="delegate" destination="MQY-EQ-eeZ" id="fbw-Ab-TdC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2I-Xi-nCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="127"/>
+            <point key="canvasLocation" x="967" y="134"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="zNj-Ot-uYQ">
@@ -99,7 +103,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="hko-wh-FZa">
+                                    <navigationItem title="Death Events" id="hko-wh-FZa">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="kZF-2a-AYQ">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="sQ1-s7-fuw"/>
@@ -119,6 +123,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3je-le-JyS"/>
+        <segue reference="6zn-1H-Edp"/>
     </inferredMetricsTieBreakers>
 </document>
