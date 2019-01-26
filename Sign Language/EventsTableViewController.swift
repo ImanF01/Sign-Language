@@ -17,12 +17,12 @@ class EventsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return 6
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "phrasesTableViewCell", for: indexPath)
-        cell.textLabel?.text = "Cell Row: \(indexPath.row) Section: \(indexPath.section)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventsTableViewCell", for: indexPath)
+    //    cell.textLabel?.text = "Cell Row: \(indexPath.row) Section: \(indexPath.section)"
         
         return cell
     }

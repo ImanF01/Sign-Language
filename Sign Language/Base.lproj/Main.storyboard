@@ -72,22 +72,30 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phrasesTableViewCell" rowHeight="60" id="CIp-KV-nSJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phrasesTableViewCell" rowHeight="60" id="CIp-KV-nSJ" customClass="PhrasesTableViewCell" customModule="Sign_Language" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CIp-KV-nSJ" id="hRk-hX-jSk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spm-F1-yvQ">
-                                            <rect key="frame" x="54" y="19" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spm-F1-yvQ">
+                                            <rect key="frame" x="31" y="11" width="313" height="38"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Spm-F1-yvQ" firstAttribute="top" secondItem="hRk-hX-jSk" secondAttribute="topMargin" id="EhD-Vd-ZGc"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Spm-F1-yvQ" secondAttribute="bottom" id="XzC-6w-MVf"/>
+                                        <constraint firstItem="Spm-F1-yvQ" firstAttribute="leading" secondItem="hRk-hX-jSk" secondAttribute="leadingMargin" constant="15" id="yId-kH-i9h"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Spm-F1-yvQ" secondAttribute="trailing" constant="15" id="zCP-xn-2nw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="phrasesLabel" destination="Spm-F1-yvQ" id="6Hc-1L-nV8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -122,21 +130,26 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="F71-1J-8PX">
-                                <rect key="frame" x="0.0" y="72" width="375" height="60"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsTableViewCell" rowHeight="70" id="F71-1J-8PX">
+                                <rect key="frame" x="0.0" y="72" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F71-1J-8PX" id="scb-Ke-agb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-Vq-pLZ">
-                                            <rect key="frame" x="31" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-Vq-pLZ">
+                                            <rect key="frame" x="31" y="11" width="313" height="48"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Rzn-Vq-pLZ" firstAttribute="leading" secondItem="scb-Ke-agb" secondAttribute="leadingMargin" constant="15" id="Jf5-eY-VMx"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Rzn-Vq-pLZ" secondAttribute="trailing" constant="15" id="VNK-gg-0UO"/>
+                                        <constraint firstItem="Rzn-Vq-pLZ" firstAttribute="top" secondItem="scb-Ke-agb" secondAttribute="topMargin" id="bcx-79-h4h"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Rzn-Vq-pLZ" secondAttribute="bottom" id="yEJ-fP-TWi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -148,10 +161,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lU-Aq-jWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="851"/>
+            <point key="canvasLocation" x="137" y="877"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="wZy-Po-eer">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="67x-vV-WZ1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oX3-ty-EXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="859"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a9Z-kO-6sN"/>
+        <segue reference="6zn-1H-Edp"/>
     </inferredMetricsTieBreakers>
 </document>

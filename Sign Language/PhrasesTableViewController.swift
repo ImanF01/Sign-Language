@@ -17,13 +17,12 @@ class PhrasesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return 20
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "phrasesTableViewCell", for: indexPath)
-        cell.textLabel?.text = "Cell Row: \(indexPath.row) Section: \(indexPath.section)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "phrasesTableViewCell", for: indexPath) as! PhrasesTableViewCell
+        cell.phrasesLabel.text = "My name is"
         
-        return cell
-    }
+        return cell    }
 }
