@@ -106,7 +106,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2I-Xi-nCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="134"/>
+            <point key="canvasLocation" x="1025" y="143"/>
         </scene>
         <!--Events Table View Controller-->
         <scene sceneID="Zed-ve-G3U">
@@ -169,10 +169,10 @@
                 <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="67x-vV-WZ1" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oX3-ty-EXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="859"/>
+            <point key="canvasLocation" x="1505" y="877"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a9Z-kO-6sN"/>
+        <segue reference="6zn-1H-Edp"/>
     </inferredMetricsTieBreakers>
 </document>

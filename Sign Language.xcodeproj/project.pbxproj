@@ -16,6 +16,7 @@
 		5F56DAE121FD077D0088138D /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DAE021FD077D0088138D /* EventsTableViewController.swift */; };
 		5F56DAE321FD1E790088138D /* PhrasesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DAE221FD1E790088138D /* PhrasesTableViewCell.swift */; };
 		5F56DAE521FD2A130088138D /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DAE421FD2A130088138D /* EventsTableViewCell.swift */; };
+		5F56DAE721FD30440088138D /* Phrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56DAE621FD30440088138D /* Phrases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5F56DAE021FD077D0088138D /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		5F56DAE221FD1E790088138D /* PhrasesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesTableViewCell.swift; sourceTree = "<group>"; };
 		5F56DAE421FD2A130088138D /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		5F56DAE621FD30440088138D /* Phrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phrases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				5F56DAE021FD077D0088138D /* EventsTableViewController.swift */,
 				5F56DAE421FD2A130088138D /* EventsTableViewCell.swift */,
 				5F56DADE21FCFBE00088138D /* PhrasesTableViewController.swift */,
+				5F56DAE621FD30440088138D /* Phrases.swift */,
 				5F56DAE221FD1E790088138D /* PhrasesTableViewCell.swift */,
 				5F56DACF21FCDF230088138D /* Assets.xcassets */,
 				5F56DAD121FCDF230088138D /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				5F56DAE121FD077D0088138D /* EventsTableViewController.swift in Sources */,
 				5F56DAE521FD2A130088138D /* EventsTableViewCell.swift in Sources */,
 				5F56DAC921FCDF210088138D /* AppDelegate.swift in Sources */,
+				5F56DAE721FD30440088138D /* Phrases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
